@@ -500,3 +500,8 @@ img {
 .projects-types-item p {
   margin-bottom: 20px;
 }
+
+.card {
+  padding-left: 24px;
+  padding-right: 24px;
+}
