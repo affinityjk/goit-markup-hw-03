@@ -176,11 +176,6 @@ img {
   color: var(--accent-color);
 }
 
-.logo-footer:hover,
-.logo-footer:focus {
-  color: var(--accent-color);
-}
-
 /* Site nav */
 .site-nav {
   display: flex;
@@ -193,6 +188,11 @@ img {
 
 .site-nav a:hover,
 .site-nav a:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
@@ -262,8 +262,8 @@ img {
   margin-right: 30px;
 }
 
-.features {
-  background-color: var(--auxilliary-bg-color);
+.features.section {
+  background-color: var(--primary-white-color);
 }
 
 .features-title {
@@ -279,7 +279,7 @@ img {
 
 .features-description {
   color: var(--secondary-text-color);
-  background-color: var(--auxilliary-bg-color);
+  background-color: var(--primary-white-color);
 
   width: 270px;
 
@@ -291,16 +291,18 @@ img {
 
 /* Apps development */
 
-.section {
-  background-color: var(--auxilliary-bg-color);
+.apps-development.section {
+  background-color: var(--primary-white-color);
+}
 
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .section-title {
   color: var(--primary-text-color);
-  background-color: var(--auxilliary-bg-color);
+  background-color: var(--primary-white-color);
 
   font-weight: 700;
   font-size: 36px;
@@ -319,9 +321,17 @@ img {
 }
 
 /* Our team */
+.team.section {
+  background-color: var(--secondary-bg-color);
+}
+
 .team-list {
   display: flex;
   justify-content: space-between;
+}
+
+.team.section .section-title {
+  background-color: var(--secondary-bg-color);
 }
 
 .employee-name {
