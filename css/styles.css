@@ -70,6 +70,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -88,6 +90,7 @@ img {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-address {
@@ -121,6 +124,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button.secondary {
@@ -256,6 +260,7 @@ img {
 
 .features-list {
   display: flex;
+  min-width: 270px;
 }
 
 .feature-list-item:not(:last-child) {
@@ -360,8 +365,16 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 60px;
-  padding-right: 60px;
+  padding-right: 59px;
   background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item {
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
@@ -503,15 +516,19 @@ img {
 }
 
 .projects-types-item h2 {
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 4px;
 }
 
 .projects-types-item p {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .card {
+  width: 370px;
   padding-left: 24px;
   padding-right: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
